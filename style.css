@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  text-align: center;
+}
+
+.header {
+  padding: 20px;
+  background-color: #e6f0ff;
+  color: #1c1c1c;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: #0077b6;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  margin: 5px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #023e8a;
+}
+
+.scrolling-text {
+  background-color: #03045e;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.main-content {
+  padding: 30px 20px;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #023047;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.image-box {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.image-box:hover {
+  transform: scale(1.02);
+}
+
+.image-box img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0096c7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #0077b6;
+}
+
+footer {
+  background-color: #001f3f;
+  color: white;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Align logo and title side-by-side and center them */
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Medium-size image for carousel on homepage */
+.carousel img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+/* Make sure the carousel is relatively positioned for absolute buttons */
+.carousel {
+  margin: 30px auto;
+  position: relative;
+  width: fit-content;
+  max-width: 90%;
+}
+
+/* Style for carousel buttons - centered vertically beside image */
+.carousel button.prev,
+.carousel button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0077b6;
+  color: white;
+  font-size: 1.4rem; /* ↓ smaller symbol size */
+  border: none;
+  padding: 6px 10px; /* ↓ smaller button padding */
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.carousel button.prev:hover,
+.carousel button.next:hover {
+  opacity: 1;
+}
+
+.carousel button.prev {
+  left: -40px; /* Optional: adjust if needed */
+}
+
+.carousel button.next {
+  right: -40px;
+}
+
+.collapsible-title {
+  cursor: pointer;
+  color: #0077b6;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.collapsible-title:hover {
+  color: #023e8a;
+}
+
+
